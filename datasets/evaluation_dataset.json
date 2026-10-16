@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "name": "MCA Research Benchmark Dataset for AI-Powered Resume Screening",
+    "version": "1.0.0",
+    "description": "Standardized evaluation queries (job descriptions) and candidate resumes with ground-truth relevance labels for comparing Keyword matching, TF-IDF, and Sentence-BERT semantic models.",
+    "dataset_type": "Synthetic benchmark with expert-annotated ground-truth relevance labels",
+    "created_at": "2026-10-16T00:00:00Z",
+    "relevance_scale": {
+      "0": "Not relevant / unqualified candidate",
+      "1": "Partially relevant / junior candidate or missing key skills",
+      "2": "Highly relevant / ideal match"
+    }
+  },
+  "benchmark_queries": [
+    {
+      "query_id": "JOB-01",
+      "title": "Senior Python Backend Engineer",
+      "description": "Seeking an experienced Senior Python Backend Engineer to build high-scale REST APIs, microservices, and database systems. Required skills: Python, Flask, FastAPI, PostgreSQL, Docker, Redis. Experience with AWS cloud deployments, CI/CD pipelines, and microservice architectures required. Minimum 4 years experience.",
+      "required_skills": ["Python", "Flask", "FastAPI", "PostgreSQL", "Docker", "Redis"],
+      "candidates": [
+        {
+          "resume_id": "RES-01-A",
+          "candidate_name": "Arjun Sharma",
+          "text": "Senior Python Developer with 5 years experience in building microservices using Python, Flask, FastAPI, and PostgreSQL. Proficient with Docker containerization, Redis caching, AWS cloud deployment, CI/CD, and Git. Successfully scaled distributed backend systems.",
+          "ground_truth_relevance": 2
+        },
+        {
+          "resume_id": "RES-01-B",
+          "candidate_name": "Priya Nair",
+          "text": "Full Stack Developer with 3 years experience. Skilled in Python, Django, MySQL, HTML, CSS, JavaScript, and Docker. Experience developing REST APIs and integrating databases. Basic knowledge of AWS.",
+          "ground_truth_relevance": 1
+        },
+        {
+          "resume_id": "RES-01-C",
+          "candidate_name": "Rohan Gupta",
+          "text": "Frontend Specialist with 4 years experience in React, TypeScript, Redux, Tailwind CSS, and Next.js. Built interactive responsive user interfaces. Minor exposure to Python scripting.",
+          "ground_truth_relevance": 0
+        },
+        {
+          "resume_id": "RES-01-D",
+          "candidate_name": "Ananya Roy",
+          "text": "Lead Backend Architect with 7 years of Python experience. Master of Flask, FastAPI, PostgreSQL, Docker, Redis, Kubernetes, Kafka, and AWS. Architected microservices serving millions of requests.",
+          "ground_truth_relevance": 2
+        },
+        {
+          "resume_id": "RES-01-E",
+          "candidate_name": "Vikas Patel",
+          "text": "Junior Python programmer with 1 year experience in Flask and SQLite. Built college projects and personal portfolio websites. Knowledge of Git and Linux basics.",
+          "ground_truth_relevance": 1
+        }
+      ]
+    },
+    {
+      "query_id": "JOB-02",
+      "title": "Machine Learning & NLP Engineer",
+      "description": "Looking for a Machine Learning Engineer specializing in Natural Language Processing and deep learning. Required skills: Python, PyTorch, Scikit-learn, NLP, Hugging Face, Transformers, Sentence Transformers. Experience with text classification, embeddings, and vector databases.",
+      "required_skills": ["Python", "PyTorch", "Scikit-learn", "NLP", "Hugging Face", "Transformers"],
+      "candidates": [
+        {
+          "resume_id": "RES-02-A",
+          "candidate_name": "Dr. Sneha Verma",
+          "text": "Research Scientist & NLP Engineer with 4 years research experience. Expert in Python, PyTorch, Hugging Face transformers, BERT, text embeddings, and Scikit-learn. Published papers on semantic similarity.",
+          "ground_truth_relevance": 2
+        },
+        {
+          "resume_id": "RES-02-B",
+          "candidate_name": "Karan Kapoor",
+          "text": "Data Analyst with 2 years experience in Python, Pandas, NumPy, SQL, Excel, and Tableau. Built predictive regression models using Scikit-learn. Basic NLP text preprocessing experience.",
+          "ground_truth_relevance": 1
+        },
+        {
+          "resume_id": "RES-02-C",
+          "candidate_name": "Meera Joshi",
+          "text": "iOS App Developer with 3 years experience in Swift, SwiftUI, Objective-C, and Xcode. Built mobile apps for App Store. No machine learning experience.",
+          "ground_truth_relevance": 0
+        },
+        {
+          "resume_id": "RES-02-D",
+          "candidate_name": "Devendra Singh",
+          "text": "AI Engineer skilled in PyTorch, TensorFlow, NLP, Scikit-learn, Large Language Models, and vector databases. Implemented semantic search engines and embedding pipelines using Sentence Transformers.",
+          "ground_truth_relevance": 2
+        }
+      ]
+    }
+  ]
+}

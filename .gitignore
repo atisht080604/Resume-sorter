@@ -1,0 +1,38 @@
+# Python / Virtual Environment
+backend/venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# SQLite Database & Uploads
+backend/app/resume_screening.db
+backend/app/uploads/
+*.sqlite3
+*.db
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+*.local
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Environment Variables
+.env
+backend/.env
